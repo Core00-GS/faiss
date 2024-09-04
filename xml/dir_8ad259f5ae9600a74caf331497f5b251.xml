@@ -19,6 +19,7 @@
     <innerfile refid="hamming-inl_8h">hamming-inl.h</innerfile>
     <innerfile refid="hamming_8h">hamming.h</innerfile>
     <innerfile refid="Heap_8h">Heap.h</innerfile>
+    <innerfile refid="NeuralNet_8h">NeuralNet.h</innerfile>
     <innerfile refid="ordered__key__value_8h">ordered_key_value.h</innerfile>
     <innerfile refid="partitioning_8h">partitioning.h</innerfile>
     <innerfile refid="prefetch_8h">prefetch.h</innerfile>
@@ -31,7 +32,7 @@
     <innerfile refid="simdlib__neon_8h">simdlib_neon.h</innerfile>
     <innerfile refid="simdlib__ppc64_8h">simdlib_ppc64.h</innerfile>
     <innerfile refid="sorting_8h">sorting.h</innerfile>
-    <innerfile refid="utils_8h">utils.h</innerfile>
+    <innerfile refid="utils_2utils_8h">utils.h</innerfile>
     <innerfile refid="WorkerThread_8h">WorkerThread.h</innerfile>
     <briefdescription>
     </briefdescription>
