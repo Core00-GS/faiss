@@ -1,25 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="distances_8h" kind="file" language="C++">
     <compoundname>distances.h</compoundname>
     <includes local="no">stdint.h</includes>
     <includes refid="platform__macros_8h" local="no">faiss/impl/platform_macros.h</includes>
     <includes refid="Heap_8h" local="no">faiss/utils/Heap.h</includes>
+    <includedby refid="Panorama_8h" local="no">faiss/impl/Panorama.h</includedby>
     <includedby refid="extra__distances-inl_8h" local="no">faiss/utils/extra_distances-inl.h</includedby>
     <incdepgraph>
-      <node id="1">
-        <label>faiss/utils/distances.h</label>
-        <link refid="distances_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>limits</label>
-      </node>
       <node id="3">
         <label>faiss/impl/platform_macros.h</label>
         <link refid="platform__macros_8h_source"/>
@@ -27,24 +15,6 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>cstdint</label>
-      </node>
-      <node id="2">
-        <label>stdint.h</label>
-      </node>
-      <node id="8">
-        <label>cmath</label>
-      </node>
-      <node id="10">
-        <label>cassert</label>
-      </node>
-      <node id="5">
-        <label>cstdio</label>
-      </node>
-      <node id="12">
-        <label>utility</label>
       </node>
       <node id="6">
         <label>faiss/utils/Heap.h</label>
@@ -68,6 +38,16 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
+      <node id="1">
+        <label>faiss/utils/distances.h</label>
+        <link refid="distances_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
       <node id="13">
         <label>faiss/utils/ordered_key_value.h</label>
         <link refid="ordered__key__value_8h_source"/>
@@ -78,29 +58,374 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
       <node id="7">
         <label>climits</label>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
       </node>
       <node id="9">
         <label>cstring</label>
       </node>
+      <node id="11">
+        <label>limits</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="12">
+        <label>utility</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="18">
+        <label>faiss/IVFlib.h</label>
+        <link refid="IVFlib_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>faiss/Index2Layer.h</label>
+        <link refid="Index2Layer_8h_source"/>
+      </node>
+      <node id="8">
+        <label>faiss/IndexAdditiveQuantizer.h</label>
+        <link refid="IndexAdditiveQuantizer_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>faiss/IndexAdditiveQuantizerFastScan.h</label>
+        <link refid="IndexAdditiveQuantizerFastScan_8h_source"/>
+      </node>
+      <node id="21">
+        <label>faiss/IndexBinaryIVF.h</label>
+        <link refid="IndexBinaryIVF_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>faiss/IndexFlat.h</label>
+        <link refid="IndexFlat_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>faiss/IndexHNSW.h</label>
+        <link refid="IndexHNSW_8h_source"/>
+      </node>
+      <node id="17">
+        <label>faiss/IndexIVF.h</label>
+        <link refid="IndexIVF_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>faiss/IndexIVFAdditiveQuantizer.h</label>
+        <link refid="IndexIVFAdditiveQuantizer_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>faiss/IndexIVFAdditiveQuantizerFastScan.h</label>
+        <link refid="IndexIVFAdditiveQuantizerFastScan_8h_source"/>
+      </node>
+      <node id="22">
+        <label>faiss/IndexIVFFastScan.h</label>
+        <link refid="IndexIVFFastScan_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>faiss/IndexIVFFlat.h</label>
+        <link refid="IndexIVFFlat_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>faiss/IndexIVFFlatPanorama.h</label>
+        <link refid="IndexIVFFlatPanorama_8h_source"/>
+      </node>
+      <node id="27">
+        <label>faiss/IndexIVFIndependentQuantizer.h</label>
+        <link refid="IndexIVFIndependentQuantizer_8h_source"/>
+      </node>
+      <node id="28">
+        <label>faiss/IndexIVFPQ.h</label>
+        <link refid="IndexIVFPQ_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>faiss/IndexIVFPQFastScan.h</label>
+        <link refid="IndexIVFPQFastScan_8h_source"/>
+      </node>
+      <node id="29">
+        <label>faiss/IndexIVFPQR.h</label>
+        <link refid="IndexIVFPQR_8h_source"/>
+      </node>
+      <node id="30">
+        <label>faiss/IndexIVFRaBitQ.h</label>
+        <link refid="IndexIVFRaBitQ_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>faiss/IndexIVFRaBitQFastScan.h</label>
+        <link refid="IndexIVFRaBitQFastScan_8h_source"/>
+      </node>
+      <node id="31">
+        <label>faiss/IndexIVFSpectralHash.h</label>
+        <link refid="IndexIVFSpectralHash_8h_source"/>
+      </node>
+      <node id="5">
+        <label>faiss/IndexNNDescent.h</label>
+        <link refid="IndexNNDescent_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>faiss/IndexNSG.h</label>
+        <link refid="IndexNSG_8h_source"/>
+      </node>
+      <node id="32">
+        <label>faiss/IndexScalarQuantizer.h</label>
+        <link refid="IndexScalarQuantizer_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>faiss/IndexShardsIVF.h</label>
+        <link refid="IndexShardsIVF_8h_source"/>
+      </node>
+      <node id="13">
+        <label>faiss/gpu/GpuIcmEncoder.h</label>
+        <link refid="GpuIcmEncoder_8h_source"/>
+      </node>
+      <node id="36">
+        <label>faiss/gpu/GpuIndexBinaryCagra.h</label>
+        <link refid="GpuIndexBinaryCagra_8h_source"/>
+      </node>
+      <node id="35">
+        <label>faiss/gpu/GpuIndexCagra.h</label>
+        <link refid="GpuIndexCagra_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>faiss/gpu/GpuIndexIVF.h</label>
+        <link refid="GpuIndexIVF_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>faiss/gpu/GpuIndexIVFFlat.h</label>
+        <link refid="GpuIndexIVFFlat_8h_source"/>
+      </node>
+      <node id="39">
+        <label>faiss/gpu/GpuIndexIVFPQ.h</label>
+        <link refid="GpuIndexIVFPQ_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>faiss/gpu/GpuIndexIVFScalarQuantizer.h</label>
+        <link refid="GpuIndexIVFScalarQuantizer_8h_source"/>
+      </node>
+      <node id="43">
+        <label>faiss/gpu/test/TestUtils.h</label>
+        <link refid="TestUtils_8h_source"/>
+      </node>
+      <node id="7">
+        <label>faiss/impl/AdditiveQuantizer.h</label>
+        <link refid="AdditiveQuantizer_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>faiss/impl/LocalSearchQuantizer.h</label>
+        <link refid="LocalSearchQuantizer_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>faiss/impl/Panorama.h</label>
+        <link refid="Panorama_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>faiss/impl/ProductAdditiveQuantizer.h</label>
+        <link refid="ProductAdditiveQuantizer_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>faiss/impl/ResidualQuantizer.h</label>
+        <link refid="ResidualQuantizer_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>faiss/impl/expanded_scanners.h</label>
+        <link refid="expanded__scanners_8h_source"/>
+      </node>
+      <node id="41">
+        <label>faiss/impl/index_read_utils.h</label>
+        <link refid="index__read__utils_8h_source"/>
+      </node>
+      <node id="44">
+        <label>faiss/invlists/BlockInvertedLists.h</label>
+        <link refid="BlockInvertedLists_8h_source"/>
+      </node>
+      <node id="45">
+        <label>faiss/invlists/DirectMap.h</label>
+        <link refid="DirectMap_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>faiss/invlists/InvertedLists.h</label>
+        <link refid="InvertedLists_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>faiss/invlists/InvertedListsIOHook.h</label>
+        <link refid="InvertedListsIOHook_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>faiss/invlists/OnDiskInvertedLists.h</label>
+        <link refid="OnDiskInvertedLists_8h_source"/>
+      </node>
+      <node id="19">
+        <label>faiss/python/python_callbacks.h</label>
+        <link refid="python__callbacks_8h_source"/>
+      </node>
       <node id="1">
         <label>faiss/utils/distances.h</label>
         <link refid="distances_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
       </node>
-      <node id="3">
-        <label>faiss/utils/extra_distances.h</label>
-        <link refid="extra__distances_8h_source"/>
-      </node>
-      <node id="2">
+      <node id="47">
         <label>faiss/utils/extra_distances-inl.h</label>
         <link refid="extra__distances-inl_8h_source"/>
-        <childnode refid="3" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
+      </node>
+      <node id="48">
+        <label>faiss/utils/extra_distances.h</label>
+        <link refid="extra__distances_8h_source"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacefaiss">faiss</innernamespace>
@@ -109,8 +434,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Facebook,<sp/>Inc.<sp/>and<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>
@@ -396,7 +721,7 @@
 <codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">//<sp/>rather<sp/>than<sp/>a<sp/>heap</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="286"><highlight class="normal">FAISS_API<sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distance_compute_min_k_reservoir;</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="288"><highlight class="comment">/**<sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
+<codeline lineno="288"><highlight class="comment">/**<sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighbors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
 <codeline lineno="289"><highlight class="comment"><sp/>*<sp/><sp/>vector<sp/>y,<sp/>w.r.t<sp/>to<sp/>max<sp/>inner<sp/>product.</highlight></codeline>
 <codeline lineno="290"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="291"><highlight class="comment"><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/>query<sp/>vectors,<sp/>size<sp/>nx<sp/>*<sp/>d</highlight></codeline>
@@ -412,7 +737,7 @@
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1HeapArray" kindref="compound">float_minheap_array_t</ref>*<sp/>res,</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref>*<sp/>sel<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="304"><highlight class="comment">/**<sp/><sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
+<codeline lineno="304"><highlight class="comment">/**<sp/><sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighbors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
 <codeline lineno="305"><highlight class="comment"><sp/>*<sp/><sp/>vector<sp/>y,<sp/>for<sp/>the<sp/>inner<sp/>product<sp/>metric.</highlight></codeline>
 <codeline lineno="306"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="307"><highlight class="comment"><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/>query<sp/>vectors,<sp/>size<sp/>nx<sp/>*<sp/>d</highlight></codeline>
@@ -431,11 +756,11 @@
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t*<sp/>indexes,</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref>*<sp/>sel<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="323"><highlight class="comment">/**<sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
+<codeline lineno="323"><highlight class="comment">/**<sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighbors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
 <codeline lineno="324"><highlight class="comment"><sp/>*<sp/><sp/>vector<sp/>y,<sp/>for<sp/>the<sp/>L2<sp/>distance</highlight></codeline>
 <codeline lineno="325"><highlight class="comment"><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/>query<sp/>vectors,<sp/>size<sp/>nx<sp/>*<sp/>d</highlight></codeline>
 <codeline lineno="326"><highlight class="comment"><sp/>*<sp/>@param<sp/>y<sp/><sp/><sp/><sp/>database<sp/>vectors,<sp/>size<sp/>ny<sp/>*<sp/>d</highlight></codeline>
-<codeline lineno="327"><highlight class="comment"><sp/>*<sp/>@param<sp/>res<sp/><sp/>result<sp/>heap<sp/>strcture,<sp/>which<sp/>also<sp/>provides<sp/>k.<sp/>Sorted<sp/>on<sp/>output</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/>*<sp/>@param<sp/>res<sp/><sp/>result<sp/>heap<sp/>structure,<sp/>which<sp/>also<sp/>provides<sp/>k.<sp/>Sorted<sp/>on<sp/>output</highlight></codeline>
 <codeline lineno="328"><highlight class="comment"><sp/>*<sp/>@param<sp/>y_norm2<sp/><sp/><sp/><sp/>(optional)<sp/>norms<sp/>for<sp/>the<sp/>y<sp/>vectors<sp/>(nullptr<sp/>or<sp/>size<sp/>ny)</highlight></codeline>
 <codeline lineno="329"><highlight class="comment"><sp/>*<sp/>@param<sp/>sel<sp/><sp/>search<sp/>in<sp/>this<sp/>subset<sp/>of<sp/>vectors</highlight></codeline>
 <codeline lineno="330"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -449,7 +774,7 @@
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>y_norm2<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref>*<sp/>sel<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="341"><highlight class="comment">/**<sp/><sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
+<codeline lineno="341"><highlight class="comment">/**<sp/><sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighbors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
 <codeline lineno="342"><highlight class="comment"><sp/>*<sp/><sp/>vector<sp/>y,<sp/>for<sp/>the<sp/>L2<sp/>distance</highlight></codeline>
 <codeline lineno="343"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="344"><highlight class="comment"><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/>query<sp/>vectors,<sp/>size<sp/>nx<sp/>*<sp/>d</highlight></codeline>
@@ -500,7 +825,7 @@
 <codeline lineno="389"><highlight class="comment"><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/>query<sp/>vectors,<sp/>size<sp/>nx<sp/>*<sp/>d</highlight></codeline>
 <codeline lineno="390"><highlight class="comment"><sp/>*<sp/>@param<sp/>y<sp/><sp/><sp/><sp/>database<sp/>vectors,<sp/>size<sp/>(max(ids)<sp/>+<sp/>1)<sp/>*<sp/>d</highlight></codeline>
 <codeline lineno="391"><highlight class="comment"><sp/>*<sp/>@param<sp/>subset<sp/>subset<sp/>of<sp/>database<sp/>vectors<sp/>to<sp/>consider,<sp/>size<sp/>(nx,<sp/>nsubset)</highlight></codeline>
-<codeline lineno="392"><highlight class="comment"><sp/>*<sp/>@param<sp/>res<sp/><sp/>rIDesult<sp/>structure</highlight></codeline>
+<codeline lineno="392"><highlight class="comment"><sp/>*<sp/>@param<sp/>res<sp/><sp/>result<sp/>structure</highlight></codeline>
 <codeline lineno="393"><highlight class="comment"><sp/>*<sp/>@param<sp/>ld_subset<sp/>stride<sp/>for<sp/>the<sp/>subset<sp/>array.<sp/>-1:<sp/>use<sp/>nsubset,<sp/>0:<sp/>all<sp/>queries</highlight></codeline>
 <codeline lineno="394"><highlight class="comment"><sp/>*<sp/>process<sp/>the<sp/>same<sp/>subset</highlight></codeline>
 <codeline lineno="395"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -524,7 +849,7 @@
 <codeline lineno="413"><highlight class="comment">///<sp/>Forward<sp/>declaration,<sp/>see<sp/>AuxIndexStructures.h</highlight></codeline>
 <codeline lineno="414"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfaiss_1_1RangeSearchResult" kindref="compound">RangeSearchResult</ref>;</highlight></codeline>
 <codeline lineno="415"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="416"><highlight class="comment">/**<sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
+<codeline lineno="416"><highlight class="comment">/**<sp/>Return<sp/>the<sp/>k<sp/>nearest<sp/>neighbors<sp/>of<sp/>each<sp/>of<sp/>the<sp/>nx<sp/>vectors<sp/>x<sp/>among<sp/>the<sp/>ny</highlight></codeline>
 <codeline lineno="417"><highlight class="comment"><sp/>*<sp/><sp/>vector<sp/>y,<sp/>w.r.t<sp/>to<sp/>max<sp/>inner<sp/>product</highlight></codeline>
 <codeline lineno="418"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="419"><highlight class="comment"><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/>query<sp/>vectors,<sp/>size<sp/>nx<sp/>*<sp/>d</highlight></codeline>
@@ -580,7 +905,7 @@
 <codeline lineno="469"><highlight class="comment"><sp/>*<sp/>@param<sp/>n<sp/><sp/><sp/>size<sp/>of<sp/>the<sp/>tables</highlight></codeline>
 <codeline lineno="470"><highlight class="comment"><sp/>*<sp/>@param<sp/>a<sp/><sp/><sp/>size<sp/>n</highlight></codeline>
 <codeline lineno="471"><highlight class="comment"><sp/>*<sp/>@param<sp/>b<sp/><sp/><sp/>size<sp/>n</highlight></codeline>
-<codeline lineno="472"><highlight class="comment"><sp/>*<sp/>@param<sp/>c<sp/><sp/><sp/>restult<sp/>table,<sp/>size<sp/>n</highlight></codeline>
+<codeline lineno="472"><highlight class="comment"><sp/>*<sp/>@param<sp/>c<sp/><sp/><sp/>result<sp/>table,<sp/>size<sp/>n</highlight></codeline>
 <codeline lineno="473"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="474" refid="namespacefaiss_1a40328c31abd0bbba5bd95d7de951e847" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1a40328c31abd0bbba5bd95d7de951e847" kindref="member">fvec_madd</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>c);</highlight></codeline>
 <codeline lineno="475"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
