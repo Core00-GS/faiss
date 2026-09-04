@@ -7,6 +7,8 @@
     <includes local="no">utility</includes>
     <includes refid="simdlib__dispatch_8h" local="no">faiss/impl/simdlib/simdlib_dispatch.h</includes>
     <includes refid="Heap_8h" local="no">faiss/utils/Heap.h</includes>
+    <includedby refid="hamming__distance_2hamming__impl_8h" local="no">faiss/utils/hamming_distance/hamming_impl.h</includedby>
+    <includedby refid="simd__impl_2hamming__impl_8h" local="no">faiss/utils/simd_impl/hamming_impl.h</includedby>
     <incdepgraph>
       <node id="10">
         <label>faiss/impl/platform_macros.h</label>
@@ -134,6 +136,24 @@
         <label>utility</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>faiss/utils/approx_topk_hamming/approx_topk_hamming.h</label>
+        <link refid="approx__topk__hamming_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>faiss/utils/hamming_distance/hamming_impl.h</label>
+        <link refid="hamming__distance_2hamming__impl_8h_source"/>
+      </node>
+      <node id="3">
+        <label>faiss/utils/simd_impl/hamming_impl.h</label>
+        <link refid="simd__impl_2hamming__impl_8h_source"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="structfaiss_1_1HeapWithBucketsForHamming32" prot="public">faiss::HeapWithBucketsForHamming32</innerclass>
     <innerclass refid="structfaiss_1_1HeapWithBucketsForHamming32_3_01CMax_3_01int_00_01int64__t_01_4_00_01NBUCKETS_00_01N_00_01HammingComputerT_01_4" prot="public">faiss::HeapWithBucketsForHamming32&lt; CMax&lt; int, int64_t &gt;, NBUCKETS, N, HammingComputerT &gt;</innerclass>
     <innerclass refid="structfaiss_1_1HeapWithBucketsForHamming16" prot="public">faiss::HeapWithBucketsForHamming16</innerclass>
@@ -264,7 +284,7 @@
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(valid_counter<sp/>==<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(valid_counter<sp/>==<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Skip<sp/>if<sp/>all<sp/>vectors<sp/>are<sp/>filtered<sp/>out</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
